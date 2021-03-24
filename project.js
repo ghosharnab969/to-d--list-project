@@ -4,7 +4,7 @@ while (input !== 'quit' && input !== 'q') {
     if (input === "list") {
         console.log("********************************");
         for (let i = 0; i < todos.length; i++) {
-            console.log(`${i}:${todos[i]}`);
+            console.log(`${i+1}:${todos[i]}`);
         }
         console.log("********************************");
     }
