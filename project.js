@@ -4,7 +4,7 @@ while (input !== 'quit' && input !== 'q') {
     if (input === "list") {
         console.log("********************************");
         for (let i = 0; i < todos.length; i++) {
-            console.log(`${i+1}:${todos[i]}`);
+            console.log(`${i + 1}:${todos[i]}`);
         }
         console.log("********************************");
     }
@@ -16,7 +16,7 @@ while (input !== 'quit' && input !== 'q') {
     else if (input === 'delete') {
         const index = parseInt(prompt("which index to be deleted?"));
         if (!Number.isNaN(index)) {
-            const deleted = todos.splice(index, 1);
+            const deleted = todos.splice(index + 1, 1);
             console.log(`task "${deleted}" has been deleted!`);
         }
         else {
