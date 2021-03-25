@@ -16,7 +16,7 @@ while (input !== 'quit' && input !== 'q') {
     else if (input === 'delete') {
         const index = parseInt(prompt("which index to be deleted?"));
         if (!Number.isNaN(index)) {
-            const deleted = todos.splice(index + 1, 1);
+            const deleted = todos.splice(index - 1, 1);
             console.log(`task "${deleted}" has been deleted!`);
         }
         else {
